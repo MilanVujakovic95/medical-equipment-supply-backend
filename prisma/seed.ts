@@ -8,6 +8,8 @@ async function main() {
     await prisma.company.deleteMany();
     await prisma.user.deleteMany();
 
+    // createMany
+
     await prisma.company.upsert({
         where: { id: 1 },
         update: {},
